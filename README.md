@@ -9,7 +9,7 @@
 Add the following to your `composer.json` file.
 
 ~~~
-"tjphippen/docusign": "0.1.*@dev"
+"tjphippen/docusign": "0.2.*@dev"
 ~~~
 
 Then run `composer install` or `composer update` to download and install.
@@ -229,7 +229,7 @@ Docusign::deleteEnvelope($envelopeId);
 
 ## Change Log
 
-#### v0.1.1
+#### v0.2.0
 
 - Added trait
 
