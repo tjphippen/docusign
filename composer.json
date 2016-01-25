@@ -8,12 +8,16 @@
         {
             "name": "TJ Phippen",
             "email": "tj@tjphippen.com"
+        },
+        {
+            "name": "Damien Russell",
+            "email": "Olofguard@gmail.com"
         }
     ],
     "require": {
         "php" : ">=5.4.0",
         "illuminate/support": "~5.1",
-        "guzzlehttp/guzzle": "~5.0",
+        "guzzlehttp/guzzle": "^6.1",
         "laravel/framework": "5.*"
     },
     "require-dev": {
@@ -27,7 +31,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/tjphippen/docusign"
+            "url": "https://github.com/olofguard/docusign"
         }
     ],
     "extra": {
