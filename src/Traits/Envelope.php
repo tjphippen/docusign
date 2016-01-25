@@ -1,7 +1,6 @@
 <?php namespace Tjphippen\Docusign\Traits;
 
 use Docusign;
-use Illuminate\Support\Facades\Config;
 
 trait Envelope {
 
@@ -32,7 +31,7 @@ trait Envelope {
 
     protected function getEnvelopeId()
     {
-        return $this->{Config::get('docusign.envelope_field')};
+        return $this->{config('docusign.envelope_field')};
     }
 
 } 

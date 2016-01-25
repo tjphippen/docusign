@@ -14,6 +14,6 @@ class DocusignLumenServiceProvider extends ServiceProvider
             return new Docusign($app->config->get('docusign', array()));
         });
 
-        $this->app->alias('Docusign', 'Tjphippen\Docusign\Facades\Docusign');
+        $this->app->alias('Docusign', \Tjphippen\Docusign\Facades\Docusign::class);
     }
 }
