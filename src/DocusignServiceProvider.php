@@ -15,16 +15,12 @@ class DocusignServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bindShared('docusign', function ($app)
+        $this->app->bind('docusign', function ($app)
         {
             return new Docusign($app->config->get('docusign', array()));
         });
 
-        $this->app->booting(function()
-        {
-            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('Docusign', 'Tjphippen\Docusign\Facades\Docusign');
-        });
+        $this->app->alias('Docusign', \Tjphippen\Docusign\Facades\Docusign::class);
     }
 
     public function provides()
