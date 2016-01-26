@@ -26,6 +26,18 @@ DocuSign includes a auto registered facade which provides the static syntax for 
 
 ### Create configuration file using artisan
 
+#### Lumen
+
+For Lumen, simply register the provider in `bootstrap/app.php`.
+
+```
+$app->register(\Tjphippen\Docusign\DocusignLumenServiceProvider::class);
+```
+
+Next you'll need a `config/docusign.php` configuration file. Feel free to copy it from the [here](https://github.com/Olofguard/docusign/blob/master/src/config/config.php)
+
+#### Laravel 5
+
 ```
 $ php artisan vendor:publish
 ```
