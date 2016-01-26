@@ -37,6 +37,16 @@ You'll then need to register the service provider in your `config/app.php` file 
 )
 ```
 
+For the Docusign facade, you can register that in `config/app.php` as well. Simply add docusign to the alias array. 
+
+```
+'aliases' => [
+    'Docusign' => \Tjphippen\Docusign\Facades\Docusign::class,
+    ...
+]
+```
+        
+
 DocuSign includes a auto registered facade which provides the static syntax for managing envelopes, recipients etc. 
 
 ```
