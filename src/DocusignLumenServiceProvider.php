@@ -15,9 +15,6 @@ class DocusignLumenServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->configure('docusign');
-
-        $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-        $loader->alias('Docusign', \Tjphippen\Docusign\Facades\Docusign::class);
     }
 
     public function register()
