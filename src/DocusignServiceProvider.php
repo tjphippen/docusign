@@ -15,9 +15,9 @@ class DocusignServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind('docusign', function ($app)
+        $this->app->bind('docusign', function ()
         {
-            return new Docusign($app->config->get('docusign', array()));
+            return new Docusign(config('docusign'));
         });
 
         $this->app->alias('Docusign', \Tjphippen\Docusign\Facades\Docusign::class);
