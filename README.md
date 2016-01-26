@@ -242,6 +242,9 @@ Docusign::deleteEnvelope($envelopeId);
 
 ## Change Log
 
+#### v0.3.1
+- Lumen Support
+
 #### v0.2.0
 
 - Added trait
