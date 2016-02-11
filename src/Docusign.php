@@ -1,6 +1,6 @@
 <?php namespace Tjphippen\Docusign;
 
-use Guzzle\Http\Client;
+use GuzzleHttp\Client;
 
 class Docusign
 {
