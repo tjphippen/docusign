@@ -18,7 +18,7 @@ You'll then need to register the service provider in your `config/app.php` file 
 
 ```php
 'providers' => array(
-    Tjphippen\Docusign\DocusignServiceProvider:class,
+    Tjphippen\Docusign\DocusignServiceProvider::class,
 )
 ```
 
