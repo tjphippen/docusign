@@ -9,7 +9,7 @@
 Add the following to your `composer.json` file.
 
 ~~~
-"tjphippen/docusign": "0.2.*@dev"
+"tjphippen/docusign": "0.3.*@dev"
 ~~~
 
 Then run `composer install` or `composer update` to download and install.
@@ -228,6 +228,10 @@ Docusign::deleteEnvelope($envelopeId);
 
 
 ## Change Log
+
+#### v0.2.0
+
+- Updated Guzzle dependancy & namespace
 
 #### v0.2.0
 
