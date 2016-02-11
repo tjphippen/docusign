@@ -14,7 +14,7 @@ return [
     'email' => '',
 
     /**
-     * The Docusign Account Email
+     * The Docusign Account Password
      */
     'password' => '',
 
