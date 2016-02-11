@@ -47,7 +47,7 @@ The configuration file will be published to `config/docusign.php` which must be 
     'email' => '',
 
     /**
-     * The Docusign Account Email
+     * The Docusign Account Password
      */
     'password' => '',
 ...
