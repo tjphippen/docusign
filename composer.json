@@ -7,7 +7,8 @@
     "authors": [
         {
             "name": "TJ Phippen",
-            "email": "tj@tjphippen.com"
+            "email": "tj@tjphippen.com",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -21,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Tjphippen\\Docusign\\": "src"
+            "Tjphippen\\Docusign\\": "src/"
         }
     },
     "repositories": [
@@ -34,5 +35,6 @@
         "branch-alias": {
             "dev-master": "0.3-dev"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
