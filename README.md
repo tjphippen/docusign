@@ -23,6 +23,13 @@ You'll then need to register the service provider in your `config/app.php` file 
 ```
 
 DocuSign includes a auto registered facade which provides the static syntax for managing envelopes, recipients etc. 
+If you have issues simply add it manually to your aliases array
+
+```php
+'aliases' => array(
+    'Docusign'  => Tjphippen\Docusign\Facades\Docusign::class,
+)
+```
 
 ### Create configuration file using artisan
 
