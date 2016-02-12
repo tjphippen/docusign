@@ -1,6 +1,7 @@
 <?php namespace Tjphippen\Docusign;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Foundation\AliasLoader;
 
 class DocusignServiceProvider extends ServiceProvider
 {
