@@ -22,8 +22,7 @@ class DocusignServiceProvider extends ServiceProvider
 
         $this->app->booting(function()
         {
-            $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-            $loader->alias('Docusign', 'Tjphippen\Docusign\Facades\Docusign');
+            AliasLoader::getInstance()->alias('Docusign', 'Tjphippen\Docusign\Facades\Docusign');
         });
     }
 
