@@ -1,0 +1,6 @@
+.vagrant/
+/bootstrap/compiled.php
+.env
+.DS_Store
+vendor/
+.idea/

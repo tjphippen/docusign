@@ -14,6 +14,21 @@ Add the following to your `composer.json` file.
 
 Then run `composer install` or `composer update` to download and install.
 
+### Create configuration file using artisan
+
+#### Lumen
+
+For Lumen, simply register the provider in `bootstrap/app.php`.
+
+```
+$app->register(\Tjphippen\Docusign\DocusignLumenServiceProvider::class);
+```
+
+Next you'll need a `config/docusign.php` configuration file. Feel free to copy it from the [here](https://github.com/Olofguard/docusign/blob/master/src/config/config.php)
+
+#### Laravel 5
+
+
 You'll then need to register the service provider in your `config/app.php` file within `providers`.
 
 ```php
@@ -31,7 +46,15 @@ If you have issues simply add it manually to your aliases array
 )
 ```
 
-### Create configuration file using artisan
+```
+'aliases' => [
+    'Docusign' => \Tjphippen\Docusign\Facades\Docusign::class,
+    ...
+]
+```
+        
+
+DocuSign includes a auto registered facade which provides the static syntax for managing envelopes, recipients etc. 
 
 ```
 $ php artisan vendor:publish
@@ -235,6 +258,9 @@ Docusign::deleteEnvelope($envelopeId);
 
 
 ## Change Log
+
+#### v0.3.1
+- Lumen Support
 
 #### v0.2.0
 

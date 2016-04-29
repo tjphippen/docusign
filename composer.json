@@ -9,12 +9,16 @@
             "name": "TJ Phippen",
             "email": "tj@tjphippen.com",
             "role": "Developer"
+        },
+        {
+            "name": "Damien Russell",
+            "email": "Olofguard@gmail.com"
         }
     ],
     "require": {
         "php" : ">=5.4.0",
         "illuminate/support": "~5.1",
-        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/guzzle": "^6.1",
         "laravel/framework": "5.*"
     },
     "require-dev": {
