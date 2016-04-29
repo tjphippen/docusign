@@ -7,7 +7,8 @@
     "authors": [
         {
             "name": "TJ Phippen",
-            "email": "tj@tjphippen.com"
+            "email": "tj@tjphippen.com",
+            "role": "Developer"
         },
         {
             "name": "Damien Russell",
@@ -17,25 +18,27 @@
     "require": {
         "php" : ">=5.4.0",
         "illuminate/support": "~5.1",
-        "guzzlehttp/guzzle": "^6.1"
+        "guzzlehttp/guzzle": "^6.1",
+        "laravel/framework": "5.*"
     },
     "require-dev": {
         "phpunit/phpunit" : "4.*"
     },
     "autoload": {
         "psr-4": {
-            "Tjphippen\\Docusign\\": "src"
+            "Tjphippen\\Docusign\\": "src/"
         }
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/olofguard/docusign"
+            "url": "https://github.com/tjphippen/docusign"
         }
     ],
     "extra": {
         "branch-alias": {
-            "dev-master": "0.2-dev"
+            "dev-master": "0.3-dev"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }

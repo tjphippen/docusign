@@ -1,6 +1,7 @@
 <?php namespace Tjphippen\Docusign;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Foundation\AliasLoader;
 
 class DocusignServiceProvider extends ServiceProvider
 {
@@ -20,7 +21,11 @@ class DocusignServiceProvider extends ServiceProvider
             return new Docusign(config('docusign'));
         });
 
-        $this->app->alias('Docusign', \Tjphippen\Docusign\Facades\Docusign::class);
+
+        $this->app->booting(function()
+        {
+            AliasLoader::getInstance()->alias('Docusign', 'Tjphippen\Docusign\Facades\Docusign');
+        });
     }
 
     public function provides()

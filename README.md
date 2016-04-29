@@ -9,7 +9,7 @@
 Add the following to your `composer.json` file.
 
 ~~~
-"tjphippen/docusign": "0.2.*@dev"
+"tjphippen/docusign": "0.3.*@dev"
 ~~~
 
 Then run `composer install` or `composer update` to download and install.
@@ -33,11 +33,18 @@ You'll then need to register the service provider in your `config/app.php` file 
 
 ```php
 'providers' => array(
-    Tjphippen\Docusign\DocusignServiceProvider:class,
+    Tjphippen\Docusign\DocusignServiceProvider::class,
 )
 ```
 
-For the Docusign facade, you can register that in `config/app.php` as well. Simply add docusign to the alias array. 
+DocuSign includes a auto registered facade which provides the static syntax for managing envelopes, recipients etc. 
+If you have issues simply add it manually to your aliases array
+
+```php
+'aliases' => array(
+    'Docusign'  => Tjphippen\Docusign\Facades\Docusign::class,
+)
+```
 
 ```
 'aliases' => [
@@ -70,7 +77,7 @@ The configuration file will be published to `config/docusign.php` which must be 
     'email' => '',
 
     /**
-     * The Docusign Account Email
+     * The Docusign Account Password
      */
     'password' => '',
 ...
@@ -254,6 +261,10 @@ Docusign::deleteEnvelope($envelopeId);
 
 #### v0.3.1
 - Lumen Support
+
+#### v0.2.0
+
+- Updated Guzzle dependancy & namespace
 
 #### v0.2.0
 

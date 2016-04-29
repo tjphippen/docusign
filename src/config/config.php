@@ -14,7 +14,7 @@ return [
     'email' => '',
 
     /**
-     * The Docusign Account Email
+     * The Docusign Account Password
      */
     'password' => '',
 
@@ -32,4 +32,9 @@ return [
      * The DocuSign Account Id
      */
     'account_id' => '',
+    
+    /**
+     * Envelope ID field (for Envelope trait) 
+     */
+    'envelope_field' => 'envelopeId',
 ];
