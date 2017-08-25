@@ -16,7 +16,7 @@ class DocusignServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bindShared('docusign', function ($app)
+        $this->app->singleton('docusign', function ($app)
         {
             return new Docusign($app->config->get('docusign', array()));
         });
