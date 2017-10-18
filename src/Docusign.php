@@ -42,6 +42,12 @@ class Docusign
         return $envelope = $this->rawJson($request);
     }
 
+    public function getEnvelopePdf($envelopeId)
+    {
+        $request = $this->client->get('envelopes/' . $envelopeId . '/documents/combined?certificate=true');
+        return $request->getBody()->getContents();
+    }
+
     public function getEnvelopeRecipients($envelopeId, $include_tabs = false)
     {
         $include_tabs = ($include_tabs) ? 'true' : 'false';
