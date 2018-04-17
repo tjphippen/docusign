@@ -34,7 +34,7 @@ class Docusign
     public function getEnvelopes($envelopeIds)
     {
         $envelopes = array('envelopeIds' => $envelopeIds);
-        $request = $this->client->put('envelopes/status', ['json' => $envelopes, 'query' => ['envelope_ids' => 'request_body']]));
+        $request = $this->client->put('envelopes/status', ['json' => $envelopes, 'query' => ['envelope_ids' => 'request_body']]);
         return $envelopes = $this->rawJson($request);
     }
 
