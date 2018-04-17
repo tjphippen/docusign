@@ -7,7 +7,6 @@ class Docusign
     private $config;
     private $client;
     private $baseUrl;
-    private $clientSettings;
 
     function __construct($config, $clientSettings=[])
     {
@@ -35,7 +34,7 @@ class Docusign
     public function getEnvelopes($envelopeIds)
     {
         $envelopes = array('envelopeIds' => $envelopeIds);
-        $request = $this->client->put('envelopes/status', ['json' => $envelopes,'query' => ['envelope_ids' => 'request_body']]));
+        $request = $this->client->put('envelopes/status', ['json' => $envelopes, 'query' => ['envelope_ids' => 'request_body']]));
         return $envelopes = $this->rawJson($request);
     }
 
