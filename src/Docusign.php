@@ -8,11 +8,13 @@ class Docusign
     private $client;
     private $baseUrl;
 
-    function __construct($config)
+    function __construct($config, $clientSettings=[])
     {
         $this->config = $config;
         $this->baseUrl = 'https://' . $config['environment']. '.docusign.net/restapi/' . $config['version'] . '/accounts/' . $config['account_id'] . '/';
-        $this->client = new Client(['base_uri' => $this->baseUrl, 'headers' => $this->getHeaders()]);
+        if(array_key_exists('query', $clientSettings)) unset($clientSettings['query']); //don't let some malicious user somehow override our request bodies. 
+        if(array_key_exists('json', $clientSettings)) unset($clientSettings['json']); //they'd be overwritten anyway, but still.
+        $this->client = new Client(array_merge($clientSettings, ['base_uri' => $this->baseUrl, 'headers' => $this->getHeaders()]));
     }
 
     public function getUsers()
