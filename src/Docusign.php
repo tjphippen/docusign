@@ -74,6 +74,12 @@ class Docusign
         return $envelope = $this->rawJson($request);
     }
 
+    public function updateEnvelopeRecipients($envelopeId, $recipients)
+    {
+        $request = $this->client->put('envelopes/' . $envelopeId . '/recipients/' , ['json' => $recipients]);
+        return $recipients = $this->rawJson($request);
+    }
+
     public function updateRecipientTabs($envelopeId, $recipientId, $tabs)
     {
         $request = $this->client->put('envelopes/' . $envelopeId . '/recipients/' . $recipientId . '/tabs', ['json' => $tabs]);
