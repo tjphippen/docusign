@@ -1,10 +1,10 @@
 # DocuSign for Laravel 5
 
 <dl>
-  <dt>Version 0.4 will be released mid September & include Docusign Connect, trait enhancements, plus an easy to use tab generator method.</dt>
-  <dd>Please let me know any additional features you'd like & I'll try to squeeze them in :P</dd>
+  <dt>This package was developed to utilize e-contract/signatures directly within a Laravel based CRM. </dt>
 </dl>
 
+[![PHPPackages Rank](http://phppackages.org/p/tjphippen/docusign/badge/rank.svg)](http://phppackages.org/p/tjphippen/docusign)
 [![Latest Stable Version](https://poser.pugx.org/tjphippen/docusign/v/stable.png)](https://packagist.org/packages/tjphippen/docusign) [![Total Downloads](https://poser.pugx.org/tjphippen/docusign/downloads.png)](https://packagist.org/packages/tjphippen/docusign)
 - [Packagist](https://packagist.org/packages/tjphippen/docusign)
 - [GitHub](https://github.com/tjphippen/docusign)
