@@ -29,13 +29,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Formulafolios\\Docusign\\": "src/"
+            "Tjphippen\\Docusign\\": "src/"
         }
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/formulafolios/docusign"
+            "url": "https://github.com/tjphippen/docusign"
         }
     ],
     "extra": {
