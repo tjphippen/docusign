@@ -1,5 +1,5 @@
 {
-    "name": "formulafolios/docusign",
+    "name": "tjphippen/docusign",
     "description": "DocuSign Rest API Wrapper for Laravel.",
     "keywords": [
         "laravel",
