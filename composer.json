@@ -1,5 +1,5 @@
 {
-    "name": "tjphippen/docusign",
+    "name": "formulafolios/docusign",
     "description": "DocuSign Rest API Wrapper for Laravel.",
     "keywords": [
         "laravel",
@@ -9,7 +9,7 @@
         "documents",
         "envelope"
     ],
-    "homepage": "https://github.com/tjphippen/docusign",
+    "homepage": "https://github.com/formulafolios/docusign",
     "license": "MIT",
     "authors": [
         {
@@ -29,13 +29,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Tjphippen\\Docusign\\": "src/"
+            "Formulafolios\\Docusign\\": "src/"
         }
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/tjphippen/docusign"
+            "url": "https://github.com/formulafolios/docusign"
         }
     ],
     "extra": {
