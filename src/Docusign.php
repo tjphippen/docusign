@@ -138,6 +138,18 @@ class Docusign
         $request = $this->client->post('envelopes/' . $envelopeId . '/views/recipient', ['json' => $data]);
         return $view = $this->rawJson($request);
     }
+    
+    public function createSenderView($envelopeId, $data)
+    {
+        $request = $this->client->post('envelopes/' . $envelopeId . '/views/sender', ['json' => $data]);
+        return $view = $this->rawJson($request);
+    }
+
+    public function updateEnvelopeDocuments($envelopeId, $data)
+    {
+        $request = $this->client->put('envelopes/' . $envelopeId . '/documents', ['json' => $data]);
+        return $view = $this->rawJson($request);
+    }
 
     // Helper Functions
     public function rawJson($response)
