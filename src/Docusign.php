@@ -63,8 +63,8 @@ class Docusign
         return $tabs = $this->rawJson($request);
     }
 
-    public function createEnvelope($data) {
-        $request = $this->client->post('envelopes/', ['json' => $data]);
+	 public function createEnvelope($data, $merge_roles_on_draft = 'false') {
+        $request = $this->client->post('envelopes/?merge_roles_on_draft='. $merge_roles_on_draft, ['json' => $data]);
         return $envelope = $this->rawJson($request);
     }
 
