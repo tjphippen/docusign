@@ -1,4 +1,4 @@
-# DocuSign for Laravel 5
+# DocuSign for Laravel 7
 
 <dl>
   <dt>This package was developed to utilize e-contract/signatures directly within a Laravel based CRM. </dt>
@@ -17,7 +17,7 @@
 Add the following to your `composer.json` file.
 
 ~~~
-"tjphippen/docusign": "0.3.*@dev"
+"tjphippen/docusign": "0.3*@dev"
 ~~~
 
 Then run `composer install` or `composer update` to download and install.
