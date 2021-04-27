@@ -63,8 +63,8 @@ class Docusign
         return $tabs = $this->rawJson($request);
     }
 
-    public function createEnvelope($data) {
-        $request = $this->client->post('envelopes/', ['json' => $data]);
+	 public function createEnvelope($data, $merge_roles_on_draft = 'false') {
+        $request = $this->client->post('envelopes/?merge_roles_on_draft='. $merge_roles_on_draft, ['json' => $data]);
         return $envelope = $this->rawJson($request);
     }
 
@@ -110,6 +110,12 @@ class Docusign
         $request = $this->client->get('envelopes/' . $envelopeId . '/templates');
         $templates = $this->rawJson($request);
         return $templates['templates'];
+    }
+	
+    public function searchEnvelopesByText($search, $from_date, $to_date)
+    {
+        $request = $this->client->get('envelopes', ['query' => ['search_text' => $search, 'from_date' => $from_date, 'to_date' => $to_date]]);
+        return $envelope = $this->rawJson($request);
     }
 
     public function getFolders($templates = false)
