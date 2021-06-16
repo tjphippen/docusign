@@ -151,6 +151,14 @@ class Docusign
         return $view = $this->rawJson($request);
     }
 
+    //Envelope Resend to Signer Only
+
+    public function resendEnvelopeToSigner($envelopeId){
+        $data = (array)json_decode('[{"emailSettings": {},"lockInformation": {},"notification": {},"status": "sent"}]')[0] ;
+        $request = $this->client->put('envelopes/' . $envelopeId."?resend_envelope=true", ['json' => $data]);
+        return $envelope = $this->rawJson($request);
+    }
+
     // Helper Functions
     public function rawJson($response)
     {
