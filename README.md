@@ -12,6 +12,11 @@
 - [Packagist](https://packagist.org/packages/tjphippen/docusign)
 - [GitHub](https://github.com/tjphippen/docusign)
 
+
+### Refer to 
+[Latest Docusign API Documentation](https://developers.docusign.com/docs/esign-rest-api/reference/) for outdated links.
+
+
 ----------
 ## Installation
 Add the following to your `composer.json` file.
