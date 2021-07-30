@@ -3,9 +3,6 @@
 <dl>
   <dt>This package was developed to utilize e-contract/signatures directly within a Laravel based CRM. </dt>
 </dl>
-<dl>
-  <dt>This commit is a privately long used expansion of the Envelope Trait, to be updated & include additional Traits for recipients, documents, etc.</dt>
-</dl>
 
 [![PHPPackages Rank](http://phppackages.org/p/tjphippen/docusign/badge/rank.svg)](http://phppackages.org/p/tjphippen/docusign)
 [![Latest Stable Version](https://poser.pugx.org/tjphippen/docusign/v/stable.png)](https://packagist.org/packages/tjphippen/docusign) [![Total Downloads](https://poser.pugx.org/tjphippen/docusign/downloads.png)](https://packagist.org/packages/tjphippen/docusign)
@@ -15,6 +12,8 @@
 
 ### Refer to 
 [Latest Docusign API Documentation](https://developers.docusign.com/docs/esign-rest-api/reference/) for outdated links.
+
+Also see my [eOriginal](https://github.com/tjphippen/eoriginal) package
 
 
 ----------
